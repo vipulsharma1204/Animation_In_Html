@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        header{
+            background: #262626;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            width: 90%;
+            height: 80px;
+            display: flex ;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 70px;
+            background: white;
+
+
+        }
+        h2{
+            font-size: 90px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+        }
+        #image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            position: absolute;
+            top:40%;
+            left: 5%;
+            color: white;
+            font-size: 5rem;
+            font-family: cursive;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP_SCROLL</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/05/Target_Corporation_logo_vector.svg.png?auto=format&q=60&fit=max&w=930" width="50px">
+            <img src="Menu_icon.png" alt="">
+        </nav>
+        <h2>
+            Loading....
+        </h2>
+        <img src="1204187820.jpg" id=image>
+        <h1>GSAP <br>Animation</h1>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script>
+        gsap.from('header', {duration:0.5,x:'-100%'})
+        gsap.from('h2', {duration:1, opacity: 0, rotation:180,})
+        gsap.from('#image', {duration:2, delay:0.2, y:'-100%', scale:'0', skewY:'1', ease :'power1.out'})
+        gsap.from('nav', {duration:1,delay:1.2,y:'-100%', scale:'0.5'})
+        gsap.from('h1', {duration:1, dealy:6,y:'-100%', opacity:'0', rotation:'75'})
+    </script>
+</body>
+</html>
