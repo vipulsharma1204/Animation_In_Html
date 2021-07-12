@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            
+            padding: 0 40%;
+            margin-top: 7cm;
+            font-family: cursive;
+            background: cornsilk;
+        }
+        .upper{
+            position: absolute;
+            margin-top: 5cm;
+            margin-left: 5%;
+            
+            
+            width: 1200px;
+            height: 100px;
+            top: 10%;
+            left: 5%;
+            line-height: 100px;
+            margin: -10px;
+            background: white;
+            color: yellow;
+            text-align: center;
+            font-size: 48px;
+            box-shadow: 1 0 10px rgb(69, 167, 12);
+            animation-name: sample; 
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+
+        }
+       
+        @keyframes sample{
+            from{
+                border-radius: 0%;
+                color: white;
+                font: medium("hello");
+            background-color: rgb(44, 0, 167);}
+                
+                to{
+                    border-radius: 80%;
+                    color:yellow;
+                    font: medium("HELLO");
+                    background-color: rgb(3, 146, 151);
+                }
+            }
+        .animation{
+            
+            
+            width: 400px;
+            height: 400px;
+            top: 40%;
+            left: 50%;
+            line-height: 500px;
+            margin: -100px;
+            background: white;
+            color: yellow;
+            text-align: center;
+            font-size: 48px;
+            box-shadow: 0 0 15px rgb(69, 167, 12);
+            animation-name: example; 
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+
+        }
+        #css{
+            padding-top: 0.1%;
+            margin-top: 8cm;
+        }
+        @keyframes example{
+            from{
+                border-radius: 0%;
+            background-color: cyan;}
+                
+                to{
+                    border-radius: 50%;
+                    color: white;
+                    background-color: crimson;
+                }
+            
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+    <div class="upper">
+        ~~~~~~~~~~~~~ANIMATION~~~~~~~~~~~~~
+
+    </div>
+    <div class="animation">
+        <div id="css">CSS</div>
+
+    </div>
+</div>
+</body>
+
+</html>
